@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Junk Case — Cute Phone Cases</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Junk Case — pastel, cute phone cases. Shop, gallery, and more.">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <div class="logo">💖</div>
+      <div class="brand-text">
+        <h1>Junk Case</h1>
+        <small>cute phone cases & trinkets</small>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="shop.html">Shop</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#about">About</a>
+      <button id="cart-btn" class="cart-btn">Cart <span id="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-inner">
+      <h2>Pastel phone cases that spark joy ✨</h2>
+      <p>Hand-picked designs — soft pastels, kawaii motifs, and durable protection. Browse the shop or peek at the gallery.</p>
+      <div class="cta-row">
+        <a class="btn" href="shop.html">Shop Cases</a>
+        <a class="btn btn-ghost" href="gallery.html">View Gallery</a>
+      </div>
+    </div>
+    <div class="hero-image" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=900&auto=format&fit=crop&crop=faces" alt="">
+    </div>
+  </main>
+
+  <section id="about" class="info-cards">
+    <article class="card">
+      <h3>Quality</h3>
+      <p>Durable TPU and shock-absorbent materials that keep your phone safe while staying cute.</p>
+    </article>
+    <article class="card">
+      <h3>Sustainable</h3>
+      <p>Eco-conscious packaging and limited-run designs to reduce waste.</p>
+    </article>
+    <article class="card">
+      <h3>Made For You</h3>
+      <p>Customizations available — charms, stickers, and layered cases.</p>
+    </article>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Junk Case • Made with pastel vibes 💕</p>
+  </footer>
+
+  <div id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <button id="close-cart" class="close">✕</button>
+    <h3>Your Cart</h3>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <div>Total: <strong id="cart-total">$0.00</strong></div>
+      <button id="checkout-btn" class="btn">Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
